@@ -27,7 +27,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: 'azure-pool-agent-k8s'
+      name: 'Self-Host-Pool'
      # vmImage: $(vmImageName)
     steps:
     - task: Docker@2
