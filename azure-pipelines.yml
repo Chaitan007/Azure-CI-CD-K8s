@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '806702f4-81a4-4391-8270-0290cee1ddb8'
-  imageRepository: 'nux_dot_net:v1'
+  imageRepository: 'nux_dot_net_v1'
   containerRegistry: 'nuxdevops.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/MvcApp/Dockerfile'
   tag: '$(Build.BuildId)'
