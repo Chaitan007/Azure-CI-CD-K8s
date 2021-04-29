@@ -39,5 +39,5 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
-    - publish: $(Build.ArtifactStagingDirectory)
+    - publish: $(Build.SourcesDirectory)
       artifact: k8s.yaml
