@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: chaitannux 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chaitannux
+  template:
+    metadata:
+      labels:
+        app: chaitannux 
+    spec:
+      containers:
+        - name: chaitannux 
+          image: nuxdevops.azurecr.io/chaitannux
+          ports:
+          - containerPort: 80
