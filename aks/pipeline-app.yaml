@@ -25,7 +25,7 @@ variables:
 
   # Agent VM image name
   #vmImageName: 'ubuntu-latest'
-   name: 'Self-Host-Pool'
+  # name: 'Self-Host-Pool'
 
 
 stages:
