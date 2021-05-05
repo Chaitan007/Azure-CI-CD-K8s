@@ -49,7 +49,9 @@ spec:
       - name: mssql-persistent-storage
         persistentVolumeClaim:
           claimName: mssql-pvc
+
 ---
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -75,7 +77,10 @@ provisioner: kubernetes.io/azure-disk
 parameters:
   storageaccounttype: Standard_LRS
   kind: Managed
+
+
 ---
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -89,6 +94,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
+
 
 ---
 
