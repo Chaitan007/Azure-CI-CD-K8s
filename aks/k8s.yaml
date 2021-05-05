@@ -124,7 +124,7 @@ spec:
     spec:
       containers:
       - name: mvc
-        image: nuxdevops.azurecr.io/nux_dot_net:v1
+        image: nuxdevops.azurecr.io/azuredotnet:v1
         ports:
         - containerPort: 80
         resources:
